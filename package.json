@@ -1,0 +1,39 @@
+{
+  "name": "luxemart-server",
+  "version": "1.0.0",
+  "description": "Enterprise-level E-commerce Backend API for LuxeMart",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "seed": "node db/seed.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "express",
+    "mongodb",
+    "jwt",
+    "api"
+  ],
+  "author": "LuxeMart Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
