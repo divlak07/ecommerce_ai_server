@@ -176,7 +176,7 @@ productSchema.virtual('inStock').get(function() {
 
 // Indexes for faster queries
 productSchema.index({ name: 'text', description: 'text', tags: 'text' });
-productSchema.index({ slug: 1 });
+// Note: slug index is automatically created due to unique: true in schema
 productSchema.index({ category: 1 });
 productSchema.index({ price: 1 });
 productSchema.index({ isActive: 1 });
